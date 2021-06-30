@@ -1,0 +1,24 @@
+#content-wrap {
+    text-align: center;
+}
+
+body {
+    background-color: beige;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+}
+
+img {
+    max-width:1000px;
+    height:auto;
+    border: 5px solid #555;
+    border-radius: 25px;
+}
+
+#books {
+    background-color: rgb(179, 177, 177);
+    border-radius: 5px;
+}
