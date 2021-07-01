@@ -1,16 +1,30 @@
 #content-wrap {
     text-align: center;
+    /* font-weight: bold;
+    font-size: 20px;
+    color: navy; */
 }
 
 body {
     background-color: beige;
-}
+        /* background-image: url('https://media.istockphoto.com/photos/old-manuscript-picture-id89894126?k=6&m=89894126&s=612x612&w=0&h=-tylJus1Tw13KV2Rq6bTjccq8uSDtiBfz0MLNlz1leg=');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover; */
+      }
 
-h1 {
-    font-family: 'Cinzel', serif;
-    text-align: center;
-}
-
+      
+      /* header {
+          background-image: url('https://media.istockphoto.com/photos/old-manuscript-picture-id89894126?k=6&m=89894126&s=612x612&w=0&h=-tylJus1Tw13KV2Rq6bTjccq8uSDtiBfz0MLNlz1leg=');
+          display: block;
+          height: 65px;
+          margin: 0 auto;
+        } */
+        
+        h1 {
+            font-family: 'Cinzel', serif;
+            text-align: center;
+        }
 img {
     max-width:1000px;
     height:auto;
@@ -21,4 +35,8 @@ img {
 #books {
     background-color: rgb(179, 177, 177);
     border-radius: 5px;
+}
+
+#character-create {
+    text-align: center;
 }

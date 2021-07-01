@@ -32,26 +32,61 @@ document.getElementById('books').addEventListener('mouseout', function() {
 // obj.name + obj.title + obj.description;
 
 
-const url = 'http://localhost:3000/Characters'
+const url = 'http://localhost:3000/books'
 
-//Fetch
-fetch(url + "?book=TheWinterKing")
-.then(function(response) {
-  return response.json();
-})
-.then(function(data){
-    appendData(data);
-    console.log(data);
-});
+//Fetch - THIS FUNCTION CONNECTS WITH THE ONE BELOW THAT PROVES JSON
+// fetch(url)
+// .then(function(response) {
+//   return response.json();
+// })
+// .then(function(data){
+//     appendData(data);
+//     console.log(data);
+//     document.getElementById('display').innerText=data[0];
+// });
+
+
+
 // .then(function(json){
 //  console.log(json[0]);
 // //  return show;
 // })
-function appendData(data) {
-const mainContainer = document.getElementById("myData");
-for (let i = 0; i < data.length; i++) {
-    const div = document.createElement("div");
-    div.innerHTML = 'Name: ' + ' ' + data[i].name + ' ' + data[i].title + ' ' + data[i].description;
-    mainContainer.appendChild(div);
-}
-}
+
+
+
+//THIS FUNCTION PROVES JSON IS CONNECTED
+// function appendData(data) {
+// const mainContainer = document.getElementById("myData");
+// for (let i = 0; i < data.length; i++) {
+//     const div = document.createElement("div");
+//     div.innerHTML = 'Name: ' + ' ' + data[i].name + ' ' + data[i].title + ' ' + data[i].description;
+//     mainContainer.appendChild(div);
+// }
+// }
+
+
+
+//THIS IS AN ATTEMPT TO POPULATE THE SELECT DROP DOWN WITH JSON DATA
+let dropdown = document.getElementById('books');
+dropdown.length = 0;
+
+let defaultOption = document.createElement('option');
+defaultOption.text = 'Select a Book';
+
+dropdown.add(defaultOption);
+dropdown.selectedIndex = 0;
+
+fetch(url)
+    .then(function(response) {
+    return response.json()
+    })
+    .then(function(data) {
+        let option;
+
+        for (let i = 0; i < data.length; i++) {
+            option = document.createElement('option');
+            option.text = data[i].book;
+            option.value = data[i].name;
+            dropdown.add(option);
+        }
+    });
