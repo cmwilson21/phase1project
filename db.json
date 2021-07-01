@@ -1,34 +1,52 @@
 {
-    "books": [
+    "characters": [
       {
-        "book": "The Winter King", 
-        "character1": "Arthur",
-        "title": "The Would Be King",
-        "description": "Arthur is the illigetimate son of High King Uther. When Arthur's half brother, the prince, Mordred is killed in battle, Arthur is charged as being guardian over the land until his nephew, Mordred's son also named Mordred, is able to reign. This is a time when the Saxons are invading, trying to take over Britain. Arthur, the great war specialist that he is, leads his warriors to battle for the heart of Britain.",
-    
-        "name2": "Derfel",
-        "title2": "Warrior",
-        "description2": "Our narrator, Derfel, now late in years, is a monk and has been asked by the young Queen Igraine to tell of his stories of Arthur. Derfel was once a warrior in trusted service to Arthur. These books are stories of the events as he remembers them."
-    },
-    {
-        "book": "Enemy of God",
-        "character1": "Guinevere",
-        "title1": "Princess",
-        "description1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-
-        "name2": "Lancelot",
-        "title2": "Prince with a Reputation",
-        "description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-    },
-    {
-        "book": "Excalibur",
-        "character1": "Merlin",
-        "title1": "Druid",
-        "description1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-
-        "character2": "Nimue",
-        "title2": "Merlin's Apprintence",
-        "description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-    }
+        "id": 1,
+        "name": "Arthur",
+        "books": [
+            {"title": "The Winter King"},
+            {"title": "Enemy of God"},
+            {"title": "Excalibur"}
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Derfel",
+        "books": [
+            {"title": "The Winter King"},
+            {"title": "Enemy of God"},
+            {"title": "Excalibur"}
+        ]
+      },
+      {
+        "id": 3,  
+        "name": "Guinevere",
+        "books": [
+            {"title": "The Winter King"},
+            {"title": "Enemy of God"}
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Lancelot",
+        "books": [
+            {"title": "The Winter King"},
+            {"title": "Enemy of God"}
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Merlin",
+        "books": [
+            {"title": "Excalibur"}
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Nimue",
+        "books": [
+            {"title": "Excalibur"}
+        ]
+      }
     ]
-  }
+    }
