@@ -21,15 +21,19 @@ body {
           margin: 0 auto;
         } */
         
-        h1 {
-            font-family: 'Cinzel', serif;
-            text-align: center;
+h1 {
+    font-family: 'Cinzel', serif;
+    text-align: center;
         }
 img {
     max-width:1000px;
     height:auto;
     border: 5px solid #555;
     border-radius: 25px;
+}
+
+#display {
+    font-family: 'Cinzel', serif;
 }
 
 #select-books {

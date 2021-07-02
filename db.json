@@ -2,15 +2,15 @@
     "books": [
       {
         "id": 1,
-        "bookTitle": "The Winter King",
+        "title": "The Winter King",
         "characters": [
-            {"name": "Arthur"},
+            {"name": "Arthur", ["description": "Our hero"]},
             {"name": "Derfel"}
         ]
       },
       {
         "id": 2,
-        "bookTitle": "Enemy of God",
+        "title": "Enemy of God",
         "characters": [
             {"name": "Guinevere"},
             {"name": "Lancelot"}
@@ -18,7 +18,7 @@
       },
       {
         "id": 3,  
-        "bookTitle": "Excalibur",
+        "title": "Excalibur",
         "characters": [
             {"name": "Merlin"},
             {"name": "Nimue"}

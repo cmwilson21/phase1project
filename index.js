@@ -27,17 +27,19 @@ document.getElementById('select-books').addEventListener('mouseout', function() 
 
 //Grabbing data from JSON
 const submitForm = e => {
+    displayCharacter().innerHTML='';
     e.preventDefault();
     let title = getSelect().value;
     fetch('http://localhost:3000/books')
     .then(respond => respond.json())
     //Filtering through the books to grab the characters from each
     .then(books => {
-            let filteredBooks = books.filter(book => book.characters.find(characters => 'The Winter King'))
-            filteredBooks.forEach(book => {
+            let filteredBook = books.find(book => title === book.title)
+            //Found the book, now find the characters
+            filteredBook.characters.forEach(character => {
                 //Displaying info into p tag
                 let p = document.createElement('p');
-                p.innerText = book.characters[0].name;
+                p.innerText = character.name;
                 displayCharacter().appendChild(p);
     } 
     ) }
