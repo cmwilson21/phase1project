@@ -1,52 +1,28 @@
 {
-    "characters": [
+    "books": [
       {
         "id": 1,
-        "name": "Arthur",
-        "books": [
-            {"title": "The Winter King"},
-            {"title": "Enemy of God"},
-            {"title": "Excalibur"}
+        "bookTitle": "The Winter King",
+        "characters": [
+            {"name": "Arthur"},
+            {"name": "Derfel"}
         ]
       },
       {
         "id": 2,
-        "name": "Derfel",
-        "books": [
-            {"title": "The Winter King"},
-            {"title": "Enemy of God"},
-            {"title": "Excalibur"}
+        "bookTitle": "Enemy of God",
+        "characters": [
+            {"name": "Guinevere"},
+            {"name": "Lancelot"}
         ]
       },
       {
         "id": 3,  
-        "name": "Guinevere",
-        "books": [
-            {"title": "The Winter King"},
-            {"title": "Enemy of God"}
-        ]
-      },
-      {
-        "id": 4,
-        "name": "Lancelot",
-        "books": [
-            {"title": "The Winter King"},
-            {"title": "Enemy of God"}
-        ]
-      },
-      {
-        "id": 5,
-        "name": "Merlin",
-        "books": [
-            {"title": "Excalibur"}
-        ]
-      },
-      {
-        "id": 6,
-        "name": "Nimue",
-        "books": [
-            {"title": "Excalibur"}
+        "bookTitle": "Excalibur",
+        "characters": [
+            {"name": "Merlin"},
+            {"name": "Nimue"}
         ]
       }
     ]
-    }
+}

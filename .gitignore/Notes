@@ -54,3 +54,62 @@ Excaliber Characters
 (Mordred)
 Morgan
 Nimue
+
+
+Images
+https://www.bl.uk/britishlibrary/~/media/bl/global/medieval%20england%20and%20france/thumbnails/arthur%20legend%20thumbnail.jpg?w=685&h=386&hash=7A84073194878A8F4B765DABCC259DF5
+
+https://images.ctfassets.net/cnu0m8re1exe/3Linjoa5ypFFWpvkBINVfb/47f33ca84fe41c00a7f3f0adc6f5fe00/shutterstock_1090944572.jpg
+
+http://cdn.cnn.com/cnnnext/dam/assets/190808075300-01-tintagel-bridge-cornwall.jpg
+
+
+
+JAVA SCRIPT ATTEMPTS
+//Fetch - THIS FUNCTION CONNECTS WITH THE ONE BELOW THAT PROVES JSON
+// .then(function(characters){
+//     let filteredCharacters=characters.filter(character => character.books.find(book =)
+//     document.getElementById('display').innerText=data[0];
+// })
+
+
+
+// .then(function(json){
+//  console.log(json[0]);
+// //  return show;
+// })
+
+
+
+//THIS FUNCTION PROVES JSON IS CONNECTED AT THE BOTTOM OF THE PAGE - FOR TESTING
+// function appendData(data) {
+// const mainContainer = document.getElementById("myData");
+// for (let i = 0; i < data.length; i++) {
+//     const div = document.createElement("div");
+//     div.innerHTML = 'Name: ' + ' ' + data[i].name + ' ' + data[i].title + ' ';
+// }
+// }
+
+
+
+//THIS IS AN ATTEMPT TO POPULATE THE SELECT DROP DOWN WITH JSON DATA
+
+// let defaultOption = document.createElement('option');
+// defaultOption.text = 'Select a Book';
+
+// dropdown.add(defaultOption);
+// dropdown.selectedIndex = 0;
+// fetch(url)
+//     .then(function(response) {
+//     return response.json()
+//     })
+//     .then(function(data) {
+//         let option;
+
+//         for (let i = 0; i < data.length; i++) {
+//             option = document.createElement('option');
+//             option.text = data[i].book;
+//             option.value = data[i].name;
+//             dropdown.add(option);
+//         }
+// }
