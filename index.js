@@ -27,21 +27,37 @@ document.getElementById('select-books').addEventListener('mouseout', function() 
 
 //Grabbing data from JSON
 const submitForm = e => {
-    displayCharacter().innerHTML='';
     e.preventDefault();
+    displayCharacter().innerHTML='';
     let title = getSelect().value;
     fetch('http://localhost:3000/books')
     .then(respond => respond.json())
     //Filtering through the books to grab the characters from each
     .then(books => {
-            let filteredBook = books.find(book => title === book.title)
-            //Found the book, now find the characters
-            filteredBook.characters.forEach(character => {
-                //Displaying info into p tag
-                let p = document.createElement('p');
-                p.innerText = character.name;
-                displayCharacter().appendChild(p);
-    } 
-    ) }
-    )
+        let filteredBook = books.find(book => title === book.title)
+        //Found the book, now find the characters
+        filteredBook.characters.forEach(character => {
+            //Displaying info into p tag
+            let p = document.createElement('p');
+            p.innerText = character.name;
+            displayCharacter().appendChild(p);
+        } 
+        ) }
+        )
+}
+
+//Slide Show JS
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
