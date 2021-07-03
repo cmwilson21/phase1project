@@ -17,22 +17,25 @@ document.addEventListener('DOMContentLoaded',() => {
     getForm().addEventListener('submit', submitForm);
 })
 //Mouse over change color
-document.getElementById('select-books').addEventListener('mouseover', function() {
-    document.getElementById('select-books').style.backgroundColor = "white";
+getSelect().addEventListener('mouseover', () => {
+    getSelect().style.backgroundColor = "white";
 });
 //Mouse out, change color back
-document.getElementById('select-books').addEventListener('mouseout', function() {
-    document.getElementById('select-books').style.backgroundColor = "rgb(179, 177, 177)";
+getSelect().addEventListener('mouseout', function() {
+    getSelect().style.backgroundColor = "rgb(179, 177, 177)";
 });
 
-//Grabbing data from JSON
+
+//Establishing the Submit Button
 const submitForm = e => {
     e.preventDefault();
     displayCharacter().innerHTML='';
+    //Grabbing the info from the dropdown
     let title = getSelect().value;
+   //Grabbing data from JSON
     fetch('http://localhost:3000/books')
     .then(respond => respond.json())
-    //Filtering through the books to grab the characters from each
+    //Filtering through the books from the data to grab the characters from each
     .then(books => {
         let filteredBook = books.find(book => title === book.title)
         //Found the book, now find the characters
