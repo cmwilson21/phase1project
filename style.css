@@ -33,19 +33,7 @@ img {
     border-radius: 5px;
 }
 
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
+/* * {box-sizing:border-box} */
 
 /* Caption text */
 .text {
@@ -53,7 +41,7 @@ img {
   font-size: 25px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  top: 106%;
   width: 100%;
   text-align: center;
   font-family: 'Cinzel', 'serif';

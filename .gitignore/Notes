@@ -1,58 +1,31 @@
 This webpage is dedicated to a few of the characters from the Bernard Cornwell series, The Warlord Chronicles
 
-
-* items idicate features that may or may not be implemented
 This purpose of the page is to display a list of the characters. The user will be able to -
     Filter characters based by book.
-    Maybe add a search button.
-    *(Click a "like" button.)
-    *(Maybe add a note).
-
 
 JavaScript Events
-Click to select the characters
-Hover-over to indicate the selection box has been crossed
-*(Click to activate a "like" button)
-
+DOMContentLoaded
+Click "Submit" to fetch characters.
+Mouse-over to highlight selection box.
+Mouse-out to indicate selection box is not selected.
 
 
 JSON Server Connect
-Connect to a description of the character
-*(Connect to a database of random quotes)
+Connect to a list of books.
 Use fetch on click to fetch URL to grab JSON information -GET request
-
-
-
-I would also like for the page to display a small selection of random quotes from the book. Here are the quotes -
-“The bards sing of love, they celebrate slaughter, they extol kings and flatter queens, but were I a poet I would write in praise of friendship.” From TWK
-
-“Ferocity gave her a beauty that nature had denied her.” From TWK
-
-“Dreams are like songs. Their task is not to offer an exact image of the world, but a suggestion of it.” From EXC 
-
-“She is a woman, and what women want, they get, and if the world and all it holds must be broken in the getting, then so be it.” From EXC 
-
-"But if we abandon oaths then we abandon guidance. We fall into chaos. We just fall. We become no better than beasts.” From EOG
 
 
 ------------------------------
 TWK Characters
 King Arthur
 Derfel
-Merlin
-(Guinevere)
-(Lancelot)
 
 EOG Characters
 Guinevere
 Lancelot
-(Ceinwyn)
-(Ingraid)
-(Galahad)
 
 Excaliber Characters
-(Mordred)
-Morgan
+Merlin
 Nimue
 
 
@@ -65,51 +38,14 @@ http://cdn.cnn.com/cnnnext/dam/assets/190808075300-01-tintagel-bridge-cornwall.j
 
 
 
-JAVA SCRIPT ATTEMPTS
-//Fetch - THIS FUNCTION CONNECTS WITH THE ONE BELOW THAT PROVES JSON
-// .then(function(characters){
-//     let filteredCharacters=characters.filter(character => character.books.find(book =)
-//     document.getElementById('display').innerText=data[0];
-// })
+EVENTUALLY
+I would also like for the page to display a small selection of random quotes from the book. Here are the quotes -
+“The bards sing of love, they celebrate slaughter, they extol kings and flatter queens, but were I a poet I would write in praise of friendship.” From TWK
 
+“Ferocity gave her a beauty that nature had denied her.” From TWK
 
+“Dreams are like songs. Their task is not to offer an exact image of the world, but a suggestion of it.” From EXC 
 
-// .then(function(json){
-//  console.log(json[0]);
-// //  return show;
-// })
+“She is a woman, and what women want, they get, and if the world and all it holds must be broken in the getting, then so be it.” From EXC 
 
-
-
-//THIS FUNCTION PROVES JSON IS CONNECTED AT THE BOTTOM OF THE PAGE - FOR TESTING
-// function appendData(data) {
-// const mainContainer = document.getElementById("myData");
-// for (let i = 0; i < data.length; i++) {
-//     const div = document.createElement("div");
-//     div.innerHTML = 'Name: ' + ' ' + data[i].name + ' ' + data[i].title + ' ';
-// }
-// }
-
-
-
-//THIS IS AN ATTEMPT TO POPULATE THE SELECT DROP DOWN WITH JSON DATA
-
-// let defaultOption = document.createElement('option');
-// defaultOption.text = 'Select a Book';
-
-// dropdown.add(defaultOption);
-// dropdown.selectedIndex = 0;
-// fetch(url)
-//     .then(function(response) {
-//     return response.json()
-//     })
-//     .then(function(data) {
-//         let option;
-
-//         for (let i = 0; i < data.length; i++) {
-//             option = document.createElement('option');
-//             option.text = data[i].book;
-//             option.value = data[i].name;
-//             dropdown.add(option);
-//         }
-// }
+"But if we abandon oaths then we abandon guidance. We fall into chaos. We just fall. We become no better than beasts.” From EOG
